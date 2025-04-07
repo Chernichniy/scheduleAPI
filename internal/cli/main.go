@@ -2,7 +2,7 @@ package cli
 
 import (
 	"github.com/Chernichniy/scheduleAPI/internal/config"
-	"github.com/Chernichniy/scheduleAPI/service"
+	"github.com/Chernichniy/scheduleAPI/internal/service"
 	"github.com/alecthomas/kingpin"
 	"gitlab.com/distributed_lab/kit/kv"
 	"gitlab.com/distributed_lab/logan/v3"
