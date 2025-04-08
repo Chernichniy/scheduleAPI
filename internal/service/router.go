@@ -18,7 +18,7 @@ func (s *service) router() chi.Router {
 	)
 	r.Route("/scheduleAPI", func(r chi.Router) {
 		//r.Route("/login", handlers.get_api_key)
-		r.Post("/create_schedule", handlers.create_schedule)
+		r.Post("/create_schedule", handlers.CreateScheduleRequest)
 	})
 
 	return r
