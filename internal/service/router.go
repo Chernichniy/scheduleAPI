@@ -16,8 +16,9 @@ func (s *service) router() chi.Router {
 			handlers.CtxLog(s.log),
 		),
 	)
-	r.Route("/integrations/schedule-bot", func(r chi.Router) {
-		// configure endpoints here
+	r.Route("/scheduleAPI", func(r chi.Router) {
+		//r.Route("/login", handlers.get_api_key)
+		r.Post("/create_schedule", handlers.create_schedule)
 	})
 
 	return r
