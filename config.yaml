@@ -12,5 +12,5 @@ cop:
   disabled: true
   endpoint: "http://..."
   upstream: "http://..."
-  service_name: schedule-bot
+  service_name: scheduleAPI
   service_port: 80

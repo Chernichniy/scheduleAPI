@@ -30,7 +30,7 @@ func CreateScheduleRequest(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	chatID, err := requests.getChatID(request.data)
+	//chatID, err := requests.getChatID(request.data)
 	if err != nil {
 		Log(r).WithError(err).Error("failed to get chat ID with provided @username")
 		ape.RenderErr(w, problems.BadRequest(err)...)
